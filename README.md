@@ -122,7 +122,13 @@ response :
 
 
 
+# Project DB Schemas
 
+There are multiple ways to setup the schema for eg either embedded or referenced. My goal with the Schema was that every entity should have it's own collections for eg. cinema, movies and showtime.
+
+Cinema - details of all cinemas
+Movies - details of all movies
+Showtime - each show time will reference one cinema and movie
 
 
 
