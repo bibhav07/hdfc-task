@@ -33,23 +33,31 @@ Open your api testing software and paste http://localhost:5000/api/v1/showtimes/
 # using auth api for sign-up and log-in
 
 1. User signup - https://hdfc-task.onrender.com/api/v1/auth/signup 
-send body eg - { 
+
+send body eg :
+
+{ 
 
     "username" : "test", 
     "email" : "test@gmail.com", 
     "password" : "test123" 
 
 }
+
 response - if email is not alreay in use "user created"
 
 2. User login - https://hdfc-task.onrender.com/api/v1/auth/login
-send body eg - {
+
+send body eg : 
+
+{
 
     "email" : "test@gmail.com", 
     "password" : "test123" 
 }
 
 response - if email and password right - {message : "user logged in", status : "success", token : "xyz..." }
+
 save this token, will use this token to book a ticket because only logged in user is allowed to access book ticket route
 
 
