@@ -98,7 +98,7 @@ eg - https://hdfc-task.onrender.com/api/v1/showtimes/show/642bbed5fdd1b5f4c970e2
 
 response - details of this show for eg : show time, movie name, cinema and seat booked
 
-# Book a movie seat
+# Book a movie seat - proteched route
 
 endpoint - https://hdfc-task.onrender.com/api/v1/showtimes/bookTicket
 
@@ -118,7 +118,7 @@ Header : key - authorization, value - Bearer YOUR_TOKEN_THE_RESPOSE_YOU_GOT_WHIL
 response :
 
 1. If seat is already booked - "seat already booked"
-2. IF seat is not booked yet - "YOUR_EMAIL, seat booked successfully"
+2. If seat is not booked yet - "YOUR_EMAIL, seat booked successfully"
 
 
 
