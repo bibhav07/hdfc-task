@@ -69,9 +69,11 @@ eg - https://hdfc-task.onrender.com/api/v1/showtimes/city/Mumbai
 respone :
 
 {
+
     city : "Mumbai",
     totalShows : 2,
     shows : [....]
+    
 }
 
 # Fetch all cinemas playing particular movie
@@ -83,6 +85,7 @@ eg - https://hdfc-task.onrender.com/api/v1/showtimes/movie/3 Idiots
 response : list of all cinemas playing 3 Idiots along with cinema
 
 {
+
     movieShowTime : [....]
 
 }
@@ -95,9 +98,27 @@ eg - https://hdfc-task.onrender.com/api/v1/showtimes/show/642bbed5fdd1b5f4c970e2
 
 response - details of this show for eg : show time, movie name, cinema and seat booked
 
-# Book a seat
+# Book a movie seat
 
+endpoint - https://hdfc-task.onrender.com/api/v1/showtimes/bookTicket
 
+eg - https://hdfc-task.onrender.com/api/v1/showtimes/bookTicket
+
+send body : 
+
+{
+
+    "showtimeId" : "642bbed5fdd1b5f4c970e2d5", 
+    "seatNumber" : "V77" 
+
+}
+
+Header : key - authorization, value - Bearer YOUR_TOKEN_THE_RESPOSE_YOU_GOT_WHILE_LOGIN
+
+response :
+
+1. If seat is already booked - "seat already booked"
+2. IF seat is not booked yet - "YOUR_EMAIL, seat booked successfully"
 
 
 
