@@ -44,7 +44,7 @@ send body eg :
 
 }
 
-response - if email is not alreay in use "user created"
+response - if email is not already in use - "user created"
 
 2. User login - https://hdfc-task.onrender.com/api/v1/auth/login
 
@@ -59,6 +59,46 @@ send body eg :
 response - if email and password right - {message : "user logged in", status : "success", token : "xyz..." }
 
 save this token, will use this token to book a ticket because only logged in user is allowed to access book ticket route
+
+# Fetch all movies playing in your city along with showtime, movie and cinema
+
+endpoint - https://hdfc-task.onrender.com/api/v1/showtimes/city/YOUR_CITY
+
+eg - https://hdfc-task.onrender.com/api/v1/showtimes/city/Mumbai
+
+respone :
+
+{
+    city : "Mumbai",
+    totalShows : 2,
+    shows : [....]
+}
+
+# Fetch all cinemas playing particular movie
+
+endpoint - https://hdfc-task.onrender.com/api/v1/showtimes/movie/YOUR_MOVIE_NAME
+
+eg - https://hdfc-task.onrender.com/api/v1/showtimes/movie/3 Idiots
+
+response : list of all cinemas playing 3 Idiots along with cinema
+
+{
+    movieShowTime : [....]
+
+}
+
+# Fetch particular show time
+
+endpoint -https://hdfc-task.onrender.com/api/v1/showtimes/show/SHOW_ID
+
+eg - https://hdfc-task.onrender.com/api/v1/showtimes/show/642bbed5fdd1b5f4c970e2d5
+
+response - details of this show for eg : show time, movie name, cinema and seat booked
+
+# Book a seat
+
+
+
 
 
 
