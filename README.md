@@ -13,8 +13,8 @@ You will get all the folder and files - controllers, modules, db ...etc
 Open up the command prompt and do npm install, it will install all the dependencies used in project. Open package.json and look for scripts object. Here are two properties "start" which is used for production environment and "dev" which we are using for development environment.
 
 # .env file Setup
-After downloading the project, create a file by name .env, this file contains all the environment variables which will be used in the project.
-We will setup 3 environt variables : 
+After downloading the project, create a file by name .env at the root level, this file contains all the environment variables which will be used in the project.
+We will setup 3 environment variables : 
 
 MONGODB_URI = mongodb+srv://YOU_USERNAME:YOU_PASSWORD@cluster0.fykf0.mongodb.net/YOUR_DATABASE?retryWrites=true&w=majority
 
