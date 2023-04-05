@@ -98,7 +98,7 @@ eg - https://hdfc-task.onrender.com/api/v1/showtimes/show/642bbed5fdd1b5f4c970e2
 
 response - details of this show for eg : show time, movie name, cinema and seat booked
 
-# Book a movie seat - proteched route
+# Book a movie seat - (Protected endpoint)
 
 endpoint - https://hdfc-task.onrender.com/api/v1/showtimes/bookTicket
 
@@ -129,6 +129,15 @@ There are multiple ways to setup the schema for eg either embedded or referenced
 Cinema - details of all cinemas
 Movies - details of all movies
 Showtime - each show time will reference one cinema and movie
+
+# Other enpoints (Public endpoints)
+
+Fetch all movies - https://hdfc-task.onrender.com/api/v1/movies
+
+Fetch all cinemas  - https://hdfc-task.onrender.com/api/v1/cinemas
+
+Fetch all shows playing in cinemas and movie - https://hdfc-task.onrender.com/api/v1/showtimes/shows
+
 
 
 
